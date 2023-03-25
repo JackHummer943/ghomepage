@@ -1,56 +1,72 @@
 import './App.css';
 
+import logo from './assets/pizza-logo.png';
+
+
 function App() {
   return (
 
-    <div className="html">
-      <div className="wrapper">
+<div className="wrapper">
+<img src={logo} ></img>  
+<div className="layout svelte-sgx7vq">
 
-{/* аналог layout svelte-sgx7pv*/}
-<div className="headerLeft">
+<header className="svelte-18keusw low" >
 
-<div className="low">      
-<div className="autograph"  >
-  <a className="svetle-18" arial-hidden="true">
-  <svg className="svelte-qivg81" xmlns="http://www.w3.org/2000/svg"></svg>
-  </a>
-</div>
+{/* <div className="autograph svelte-18keusw">
+<a aria-hidden="true" className="svelte-18keusw">
+<svg className="svelte-qivg81">
+</svg>
+</a>
+</div>  */}
 <nav>
+  
   <ul className="svelte-dmnv9n">
-    <li className="svelte-dmnv9n">
-      <a className="svelte-dmnv9n">Work</a> 
+    
+<li className="svelte-dmnv9n">
+  
+  <a  href="/work" className="svelte-dmnv9n">Work</a> 
+</li>
+<li className="svelte-dmnv9n">
+<a href="/about" className="svelte-dmnv9n">About</a>
+ </li>
+<li className="svelte-dmnv9n">
+<a href="/contact" className="svelte-dmnv9n">Contact</a>
+ </li>
+
+ </ul>
+ 
+ </nav>
+ 
+ </header> 
+   
+ <main className="cover svelte-dkfo2e">
+ <ul className="svelte-14b3obz">
+ <li className="svelte-14b3obz">
+ <a  className="svelte-9k6p9w" >
+ Dry Media</a> 
+ 
+ </li>
+ <li className="svelte-14b3obz">
+ <a href="/ink" className="svelte-9k6p9w" >
+  Ink</a>
+ 
+  </li>
+<li className="svelte-14b3obz">
+<a href="/colour-pastel" className="svelte-9k6p9w">
+  Colour Pastel</a>
       </li>
-    <li className="svelte-dmnv9n">
-        <a className="svelte-dmnv9n" href="/about">About</a> 
-        </li>
-      <li className="svelte-dmnv9n">
-          <a className="svelte-dmnv9n" href="/contact">Contact</a>
-           </li>
-           </ul>
-           </nav>
-           </div>
-</div>
-
-<main>
-  <ul>
-    <li>Dry Media</li>
-    <li>Ink</li>
-    <li>Colour</li>
-    <li>Pastel</li>
-    <li>Watercolour</li>
-  </ul>
-</main>
-<footer>
-  <p>
-  {/* ©&nbsp;
-  2011
-  –
-  2023 */}
-  </p>
+      <li className="svelte-14b3obz">
+<a href="/colour-pastel" className="svelte-9k6p9w">
+  Watercolour</a>
+      </li>
+      
+            </ul>
+            </main> 
+<footer className="svelte-12ieuf3"><p>©&nbsp;2011–2023 
+<span className="name svelte-12ieuf3">Gdacksa</span></p>
 </footer>
-
 </div>
-    </div>
+</div>
   );
 }
 
