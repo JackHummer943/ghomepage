@@ -1,12 +1,17 @@
 import './App.css';
-
+import React from 'react';
 import logo from './assets/pizza-logo.png';
-
+import Work from './pages/Work';
 
 function App() {
+  const [workOpened, setWorkOpened] = React.useState(false);
   return (
 
 <div className="wrapper">
+  
+{/* <Work/> */}
+
+
 <img src={logo} ></img>  
 <div className="layout svelte-sgx7vq">
 
@@ -39,7 +44,7 @@ function App() {
  
  </header> 
    
- <main className="cover svelte-dkfo2e">
+ {/* <main className="cover svelte-dkfo2e">
  <ul className="svelte-14b3obz">
  <li className="svelte-14b3obz">
  <a  className="svelte-9k6p9w" >
@@ -61,7 +66,7 @@ function App() {
       </li>
       
             </ul>
-            </main> 
+            </main>  */}
 <footer className="svelte-12ieuf3"><p>©&nbsp;2011–2023 
 <span className="name svelte-12ieuf3">Gdacksa</span></p>
 </footer>

@@ -28,7 +28,8 @@ div {
   display: block;
 }
 .wrapper {
-
+ max-width: 1200px;
+  max-height: 1800px;
 
   display: block;
   color: #060606;
@@ -203,7 +204,12 @@ div {
   font-family: "QuercusMedium", serif;
 
 }
-.li {
+li {
     display: list-item;
     text-align: -webkit-match-parent;
+}
+img {
+  position:absolute;
+  max-width: 500px;
+  height: 400px;
 }
