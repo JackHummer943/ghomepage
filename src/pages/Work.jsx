@@ -1,29 +1,37 @@
+import logo from '../assets/pizza-logo.png';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import WorkPages from './WorkPages';
+
 function Work() {
-  return(  <div className="work">
-  <main className="cover svelte-dkfo2e">
-<ul className="svelte-14b3obz">
-<li className="svelte-14b3obz">
-<a  className="svelte-9k6p9w" >
-Dry Media</a> 
+  return(  
 
-</li>
-<li className="svelte-14b3obz">
-<a href="/ink" className="svelte-9k6p9w" >
-Ink</a>
+    <div className="work">
+      <img src={logo} style={{marginLeft: 40 + '%'}} alt=""
+      />
+      <nav>
+  
+  <ul className="svelte-dmnv9n">
+    
+<WorkPages
+/>
+<li className="svelte-dmnv9n">
+<a href="/about" className="svelte-dmnv9n">Ink</a>
+ </li>
+<li className="svelte-dmnv9n">
+<a href="/contact" className="svelte-dmnv9n">Colour Pastel</a>
+ </li>
+ <li className="svelte-dmnv9n">
+<a href="/contact" className="svelte-dmnv9n">Watercolour</a>
+ </li>
 
-</li>
-<li className="svelte-14b3obz">
-<a href="/colour-pastel" className="svelte-9k6p9w">
-Colour Pastel</a>
-   </li>
-   <li className="svelte-14b3obz">
-<a href="/colour-pastel" className="svelte-9k6p9w">
-Watercolour</a>
-   </li>
-   
-         </ul>
-         </main> 
-</div>);
+ </ul>
+ 
+ </nav>
+    </div>
+
+
+
+);
 }
 
 export default Work;
