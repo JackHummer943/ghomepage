@@ -1,19 +1,33 @@
 import logo from '../assets/pizza-logo.png';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import WorkPages from './WorkPages';
+import kihot from '../assets/kihot.png';
+import pansa from '../assets/pansa.png';
 
 function Work() {
   return(  
 
     <div className="work">
-      <img src={logo} style={{marginLeft: 40 + '%'}} alt=""
+      <li className="svelte-dmnv9n">
+  
+  <a  href="/dry_media" className="svelte-dmnv9n">
+    
+   <img src={kihot} style={{marginTop: 100 + '%'}}alt=""/>
+   <img src={pansa} alt=""/>
+   </a> 
+  </li>
+
+      {/* <img src={logo} style={{marginLeft: 40 + '%'}} alt=""
       />
       <nav>
   
   <ul className="svelte-dmnv9n">
+  <li className="svelte-dmnv9n">
+  
+  <a  href="/dry_media" className="svelte-dmnv9n">
     
-<WorkPages
-/>
+   Dry Media 
+   </a> 
+  </li>
+
 <li className="svelte-dmnv9n">
 <a href="/about" className="svelte-dmnv9n">Ink</a>
  </li>
@@ -26,7 +40,7 @@ function Work() {
 
  </ul>
  
- </nav>
+ </nav> */}
     </div>
 
 

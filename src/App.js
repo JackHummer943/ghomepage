@@ -6,12 +6,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Work from './pages/Work';
 import Home from './pages/Home';
 import About from './pages/About';
+import WorkPages from './pages/WorkPages';
 
 
 
 function App() {
 
-  // const [homeOpened, setHomeOpened] = React.useState(false);
   
   return (
 
@@ -23,7 +23,9 @@ function App() {
   <Routes>
     <Route path="/" element={<Home/>}/>
     <Route path="/Work" element={<Work/>}/>
-    <Route path="About" element={<About/>}/>
+    <Route path="/About" element={<About/>}/>
+    <Route path="/dry_media" element={<WorkPages/>}/>
+    
   </Routes>
 
 </Router>
