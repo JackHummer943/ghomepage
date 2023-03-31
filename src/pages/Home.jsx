@@ -2,11 +2,13 @@ import logo from '../assets/pizza-logo.png';
 function Home(){
 return(
   <div className="work">
-      <img src={logo} style={{marginLeft: 40 + '%'}} alt=""
-      />
+      <div className="img_home" 
+      // src={logo} style={{marginLeft: 40 + '%'}} alt=""
+      ></div>
+      
       <nav>
   
-  <ul className="svelte-dmnv9n">
+  <ul className="home_block">
     
 <li className="svelte-dmnv9n">
   
@@ -21,8 +23,8 @@ return(
  </ul>
  
  </nav>
- <footer className="svelte-12ieuf3"><p>©&nbsp;2011–2023 
-</p><p>G&nbsp;Dacksa</p>
+ <footer className="svelte-12ieuf3"><p>© 2011–2023 
+G Dacksa</p>
 </footer>
     </div>
 )
