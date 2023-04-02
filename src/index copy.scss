@@ -1,16 +1,16 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-// .html{
+// body {
+//   max-width: 2160px;
+//   margin: 0 auto;
+//   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  
+// }
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//     monospace;
+// }
+
+// html {
+//   background-size: 100%;
 //   background-color: #f1f1f0;
 //     color: #060606;
 //     --link-color: currentcolor;
@@ -26,186 +26,274 @@ code {
 //     display: block;
 // }
 
-div {
-  display: block;
-}
-.wrapper {
+// div {
+//   display: block;
+// }
+// .wrapper {
+//  max-width: 1100px;
+//  max-height: 250px;
 
+//   display: block;
+//   color: #060606;
+//   --link-color: currentcolor;
+//   --hover-color: #5f3220;
+//   font-size: calc(16px + 0.1vw);
+//   font-family: "Quercus", serif;
+//   line-height: 1.35;
+//   --x-over-line: 0.83;
+// }
 
-  display: block;
-  color: #060606;
-  --link-color: currentcolor;
-  --hover-color: #5f3220;
-  font-size: calc(16px + 0.1vw);
-  font-family: "Quercus", serif;
-  line-height: 1.35;
-  --x-over-line: 0.83;
-}
-.headerLeft {
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: var(--horizon) [horizon] auto min-content;
-    width: 192vh;
-    max-width: 100%;
-    min-height: 100vh;
-    margin: auto;
-    --horizon: 35vh;
+// .headerLeft {
+//   grid-template-columns: 1fr 2fr 2fr 1fr;
+//   grid-template-rows: var(--horizon) [horizon] auto min-content;
+//     width: 192vh;
+//     max-width: 100%;
+//     min-height: 100vh;
+//     margin: auto;
+//     --horizon: 35vh;
 
-  display: grid;
+//   display: grid;
 
-}
-.low {
-  position: sticky;
-    top: var(--horizon);
-    z-index: 1;
-    grid-row: 2;
-    grid-column: 1;
-    flex-flow: column nowrap;
-    align-items: center;
-    padding-top: calc(1rem * (1 + 1 - var(--x-over-line)));
-    --attachment: attached;
-    --autograph-size: 1.25em;
+// }
+// .low {
+//   position: sticky;
+//     top: var(--horizon);
+//     z-index: 1;
+//     grid-row: 2;
+//     grid-column: 1;
+//     flex-flow: column nowrap;
+//     align-items: center;
+//     padding-top: calc(1rem * (1 + 1 - var(--x-over-line)));
+//     --attachment: attached;
+//     --autograph-size: 1.25em;
 
-    display: flex;
-    --horizon: 35vh;
-    color: #060606;
-    --link-color: currentcolor;
-    --hover-color: #5f3220;
+//     display: flex;
+//     --horizon: 35vh;
+//     color: #060606;
+//     --link-color: currentcolor;
+//     --hover-color: #5f3220;
 
-    font-size: calc(16px + 0.1vw);
-    font-family: "Quercus", serif;
-    line-height: 1.35;
-    --x-over-line: 0.83;
-}
-.autograph {
-    top: -2.4rem;
-    left: -0.75rem;
-    margin-left: 0;
-    margin-bottom: -1.25rem;
+//     font-size: calc(16px + 0.1vw);
+//     font-family: "Quercus", serif;
+//     line-height: 1.35;
+//     --x-over-line: 0.83;
+// }
+// // .autograph {
+// //     top: -2.4rem;
+// //     left: -0.75rem;
+// //     margin-left: 0;
+// //     margin-bottom: -1.25rem;
     
-    position: relative;
-    width: var(--autograph-size);
-    height: var(--autograph-size);
+// //     position: relative;
+// //     width: var(--autograph-size);
+// //     height: var(--autograph-size);
 
-    margin-right: -0.5em;
+// //     margin-right: -0.5em;
 
-    display: block;
+// //     display: block;
 
-    --attachment: attached;
-    --autograph-size: 1.25em;
+// //     --attachment: attached;
+// //     --autograph-size: 1.25em;
 
-    --horizon: 35vh;
+// //     --horizon: 35vh;
 
-    --link-color: currentcolor;
-    --hover-color: #5f3220;
+// //     --link-color: currentcolor;
+// //     --hover-color: #5f3220;
 
-    font-size: calc(16px + 0.1vw);
-    font-family: "Quercus", serif;
-    line-height: 1.35;
+// //     font-size: calc(16px + 0.1vw);
+// //     font-family: "Quercus", serif;
+// //     line-height: 1.35;
 
-    --x-over-line: 0.83;
-}
-.svetle-18 {
-  color: var(--link-color);
-    transition: color 220ms;
+// //     --x-over-line: 0.83;
+// // }
 
-    --attachment: attached;
-    --autograph-size: 1.25em;
+// a {
+//   color: var(--link-color);
+//   transition: color 220ms;
+//   text-decoration: none;
+// }
+// .svetle-18 {
+//   color: var(--link-color);
+//     transition: color 220ms;
 
-    --horizon: 35vh;
+//     --attachment: attached;
+//     --autograph-size: 1.25em;
 
-    --link-color: currentcolor;
-    --hover-color: #5f3220;
+//     --horizon: 35vh;
 
-    font-size: calc(16px + 0.1vw);
-    font-family: "Quercus", serif;
-    line-height: 1.35;
+//     --link-color: currentcolor;
+//     --hover-color: #5f3220;
 
-    --x-over-line: 0.83;
+//     font-size: calc(16px + 0.1vw);
+//     font-family: "Quercus", serif;
+//     line-height: 1.35;
 
-    display: none;
+//     --x-over-line: 0.83;
 
-}
-.svelte-81{
-  fill: currentColor;
+//     display: none;
 
-  overflow-clip-margin: content-box;
-  overflow: hidden;
-  &__a{
-    color: var(--link-color);
-  }
-  --attachment: attached;
-  --autograph-size: 1.25em;
+// }
+// .svelte-81{
+//   fill: currentColor;
 
-  --horizon: 35vh;
+//   overflow-clip-margin: content-box;
+//   overflow: hidden;
+//   &__a{
+//     color: var(--link-color);
+//   }
+//   --attachment: attached;
+//   --autograph-size: 1.25em;
 
-  --link-color: currentcolor;
-  --hover-color: #5f3220;
+//   --horizon: 35vh;
 
-  font-size: calc(16px + 0.1vw);
-  font-family: "Quercus", serif;
-  line-height: 1.35;
+//   --link-color: currentcolor;
+//   --hover-color: #5f3220;
 
-  --x-over-line: 0.83;
-}
-.nav {
-  display: block;
+//   font-size: calc(16px + 0.1vw);
+//   font-family: "Quercus", serif;
+//   line-height: 1.35;
 
-  --attachment: attached;
-  --autograph-size: 1.25em;
-
-  --horizon: 35vh;
-
-  --link-color: currentcolor;
-  --hover-color: #5f3220;
-
-  font-size: calc(16px + 0.1vw);
-  font-family: "Quercus", serif;
-  line-height: 1.35;
-
-  --x-over-line: 0.83;
-
-}
-
-.svelte-dmnv9n{
-  flex-flow: column nowrap;
-  padding: 0;
-  font-size: 0.72em;
-  letter-spacing: 0.1em;
-
-  display: flex;
-  align-items: baseline;
-  margin: 0;
-  list-style: none;
-  text-transform: uppercase;
+//   --x-over-line: 0.83;
+// }
+// // .svelte-dmnv9n {
+// //   background-color: aliceblue;
+// //   position: absolute;
+// // }
+// nav {
+//   margin-left: 40vw;
+//   margin-left: 40vh;
+//   font-size: calc(16px + 0.1vw);
+//   font-family: "Quercus", serif;
 
 
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+// }
+// .home_block {
+//   flex-flow: column nowrap;
+//   padding: 0;
+//   font-size: 1em;
+//   // display: flex;
+//   margin: 0;
+//   // width: ;
 
-  --attachment: attached;
-  --autograph-size: 1.25em;
+//   // margin-block-start: 1em;
+//   // margin-block-end: 1em;
+//   // margin-inline-start: 0px;
+//   // margin-inline-end: 0px;
+//   // padding-inline-start: 40px;
+ 
+// }
+// .svelte-dmnv9n{
+//   flex-flow: column nowrap;
+//   padding: 0;
+//   font-size: 1em;
+//   letter-spacing: 0.1em;
 
-  --horizon: 35vh;
+//   display: flex;
+//   align-items: baseline;
+//   margin: 0;
+//   list-style: none;
+//   text-transform: uppercase;
 
-  --link-color: currentcolor;
-  --hover-color: #5f3220;
 
-  font-family: "Quercus", serif;
-  line-height: 1.35;
+//   margin-block-start: 1em;
+//   margin-block-end: 1em;
+//   margin-inline-start: 0px;
+//   margin-inline-end: 0px;
+//   padding-inline-start: 40px;
 
-  --x-over-line: 0.83;
-}
-.block__image {
-  max-width: 80px;
-  max-height: 80px;
-  text-align: center;
-  margin-bottom: 65px;
-  display: flex;
-  justify-content: center;
-  &__image {
-    width: 260px;
-  }
-}
+//   --attachment: attached;
+//   --autograph-size: 1.25em;
+
+//   --horizon: 35vh;
+
+//   --link-color: currentcolor;
+//   --hover-color: #5f3220;
+
+//   font-family: "Quercus", serif;
+//   line-height: 1.35;
+
+//   --x-over-line: 0.83;
+//   font-family: "QuercusMedium", serif;
+
+// }
+// // ul {
+// //     width: 1200px;
+// //     background-color: aliceblue;
+// //     position: absolute;
+// // }
+// li {
+//     display: list-item;
+//     text-align: -webkit-match-parent;
+// }
+
+// p {
+//   width: 200px;
+// }
+// footer {
+//   position:absolute;
+//   width: 20%;
+//   margin-top: -35vh;
+//   margin-left: 70%;
+// }
+// .home {
+//    // display: flex;
+//    flex-direction: column;
+//    position: sticky;
+//    width: 420px;
+//    height: 100%;
+//    right: 0;
+//    background: #FFFFFF;
+//   //  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+//    padding: 30px;
+//    .items {
+//      flex: 1;
+//      overflow:auto;
+//      margin-bottom: 40px;
+//    }
+//      h2 {
+//        margin: 0;
+//      }
+//  } 
+// .work {
+//   // display: flex;
+//   flex-direction: column;
+//   position: absolute;
+//   top: 0px;
+//   left: 0px;
+//   width: 80%;
+//   height: 100%;
+//   right: 0;
+//   background: #FFFFFF;
+//   // box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+
+// }
+// .description {
+//   margin-left: 20px;
+//   width: 50%;
+// }
+// img {
+//   background-image: url(../src/assets/pizza-logo.png);
+//   // background-image: url(../src/assets/pizza-logo.png);
+//   margin-bottom: -200px;
+//   background-size: 50%;
+//   background-repeat: no-repeat;
+//   height: 1000px;
+//   width: 700px;
+//   min-width: 75%;
+//   min-height: 90%;
+
+//   max-width: 100%;
+//   max-height: 100%;
+//   margin-left: 20vw;
+
+  
+// }
+// .img_home {
+//   position: absolute;
+//   width: 10vw;
+//   height: 30vh;
+//   max-width: 30vw;
+//   max-height: 90vw;
+//   left: -25%; 
+//   bottom: 40%;
+// }

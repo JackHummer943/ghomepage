@@ -6,14 +6,19 @@ function Work() {
   return(  
 
     <div className="work">
-      <li className="svelte-dmnv9n">
+
+   
+ 
+<img   src={kihot} alt=""/>
+<img   src={pansa} alt=""/>
+      {/* <li className="svelte-dmnv9n">
+
   
   <a  href="/dry_media" className="svelte-dmnv9n">
     
-   <img src={kihot} style={{marginTop: 100 + '%'}}alt=""/>
-   <img src={pansa} alt=""/>
+
    </a> 
-  </li>
+  </li> */}
 
       {/* <img src={logo} style={{marginLeft: 40 + '%'}} alt=""
       />
