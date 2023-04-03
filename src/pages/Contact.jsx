@@ -5,19 +5,30 @@ function Contact() {
   <img src={aboutPhoto} className="portrait_img"/>
   </div>
   <div className="description">
-  <div class="copy svelte-dkfo2e">
+  <footer ><p>© 2011–2023 
+  G.Dacksa</p>
+</footer>
+  <div className="contact">
     <p>
-      <a href="mailto:letters@...art">letters@...art</a></p> 
-    <section class="social svelte-10ouce2">
-      <h3 class="follow svelte-10ouce2">Follow</h3> 
-      <ul class="svelte-10ouce2"><li class="svelte-10ouce2">
+      <a href="mailto:letters@...art">letters@...art</a>
+    </p> 
+    <section>
+      <h3 >Follow</h3> 
+      <ul>
+        <li>
         <a href="/">Facebook</a>
-        </li><li class="svelte-10ouce2">
+        </li>
+        <li>
           <a href="/">Instagram</a>
-          </li><li class="svelte-10ouce2">
+          </li>
+          <li>
             <a href="/">Vk</a>
-            </li><li class="svelte-10ouce2">
-              <a href="/">Ok</a></li></ul></section>
+            </li>
+            <li>
+              <a href="/">Ok</a>
+              </li>
+              </ul>
+              </section>
               </div>
 </div>
 </div>);

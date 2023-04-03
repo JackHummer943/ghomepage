@@ -3,7 +3,7 @@ function Home(){
 return(
   <div className="home">
      <footer className="svelte-12ieuf3"><p>© 2011–2023 
-G Dacksa</p>
+     G.Dacksa</p>
 </footer>
       
       
@@ -14,21 +14,20 @@ G Dacksa</p>
 <img className="img_home" 
       src={logo}  alt=""
       />
-
 </div>
 <div class="child">
 
   <ul className="home_block">
 
-<li className="svelte-dmnv9n">
+<li >
   
-  <a  href="/work" className="svelte-dmnv9n">Work</a> 
+  <a  href="/work" >Work</a> 
 </li>
-<li className="svelte-dmnv9n">
-<a href="/about" className="svelte-dmnv9n">About</a>
+<li >
+<a href="/about" >About</a>
  </li>
-<li className="svelte-dmnv9n">
-<a href="/contact" className="svelte-dmnv9n">Contact</a>
+<li >
+<a href="/contact" >Contact</a>
  </li>
  </ul>
 </div>
