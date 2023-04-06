@@ -18,6 +18,7 @@
 // }
 // }
 .home {
+  font-family: 'Inter', sans-serif;
   background-image: url(../src/assets/mainTitle.jpg);
   // background-position: left 5%;
   background-size: cover;
@@ -28,6 +29,8 @@
   // height: 100%;
   // width: 100%;
   // min-width: 410px;
+  
+
   footer{
     // точные значения левого отступа и сверху
     margin-left: 9%; 
@@ -56,7 +59,7 @@
             
             font-size: 57px;
             &:hover{
-              // text-decoration: line-through; 
+              text-decoration: line-through; 
               font-size: 67px;
               color: white;
             }
@@ -90,6 +93,7 @@ a {
   width: 70%;
   color: silver;
   text-decoration: none;
+
 }
 
 img {
@@ -127,6 +131,7 @@ img {
       color: #8f8c85;
       --link-color: #eae8e3;
       --hover-color: #f7f5f1;
+      
     }
   }
 }
@@ -139,7 +144,7 @@ img {
   min-width: 200px;
   min-height: 250px;
 }
-.work {
+.illustrations {
     display: flex;
     flex-direction: column;
     width: 800px;
