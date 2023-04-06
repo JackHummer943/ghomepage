@@ -1,50 +1,97 @@
-.wrapper {
-max-width: 1000px;
-// background-color: rgb(93, 174, 224);
-min-width: 410px;
-// border-color: black;
-.work{
-  background-color: black;
-}
-}
-.home {
-  min-width: 410px;
-}
-footer {
-  // background-color: green;
-  min-width: 100px;
+// body{
+//   width: 100%;
+//   height: 100%;
   
+// }
+// .wrapper {
+//   width: 100%;
+//   height: 100%;
+
+// // max-width: 1000px;
+// // background-color: rgb(93, 174, 224);
+// // min-width: 410px;
+// // border-color: black;
+
+// .work{
+//   background-color: black;
+  
+// }
+// }
+.home {
+  background-image: url(../src/assets/mainTitle.jpg);
+  // background-position: left 5%;
+  background-size: cover;
+  width: 117vw;
+  height: 130vh;
+  // width: 1800px;
+  // height: 1000px;
+  // height: 100%;
+  // width: 100%;
+  // min-width: 410px;
+  footer{
+    // точные значения левого отступа и сверху
+    margin-left: 9%; 
+    margin-top: 16.75%;
+    p{
+      color: #8f8c85;
+      --link-color: #eae8e3;
+      --hover-color: #f7f5f1;
+       
+    }
+  }
+  nav{
+    
+      // точные значения левого отступа и сверху
+      margin-left: 13%; 
+      margin-top: -7.3%;
+      ul{
+        margin-left: 5%;
+        li{
+          margin-bottom: 0%;
+          list-style-type: none;
+          color: white;
+         
+          a{
+            color: silver;
+            
+            font-size: 57px;
+            &:hover{
+              // text-decoration: line-through; 
+              font-size: 67px;
+              color: white;
+            }
+            
+          }
+        }
+      }
+    }
 }
-p {
-  margin-left: 80%;
-  // background-color: orange;
-}
-nav {
+
+// p {
+//   margin-left: 0%;
+//   // background-color: orange;
+// }
+header{
   // background-color: aqua;
-  margin-left: 1%;
   margin-right: 30%;
-
+  padding-left: 6.75%;
+  padding-top: 17.5%;
+  font-size: 25px;
+  li {
+    margin-left: 0%;
+    list-style-type: none;
+    // margin-bottom: 25%;
+  
+  }
 
 }
-ul {
-  // background-color: wheat;
-  width: 50%;
-  height: 10%;
-  min-width: 100px;
 
-  font-size: 20px;
-}
 a {
   width: 70%;
-  color: var(--link-color);
+  color: silver;
   text-decoration: none;
 }
-li {
-  margin-left: 0%;
-  list-style-type: none;
-  margin-bottom: 25%;
 
-}
 img {
   // background-image: url(../src/assets/pizza-logo.png) ;
  
@@ -66,21 +113,29 @@ img {
   height: 100%;
   width: 100%;
 }
-.child {
+// .child {
+//   width: 100%;
+//   height: 100%;
+// }
+.childA {
   width: 100%;
   height: 100%;
+  
   ul{
     li{
       font-size: 30px;
+      color: #8f8c85;
+      --link-color: #eae8e3;
+      --hover-color: #f7f5f1;
     }
   }
 }
 .img_home {
-  // width: 35vw;
-  width: 150%;
-  // height: 70vh;
+  width: 300%;
+  // width: 150%;
+  margin-top: -16%;
   height: 100%;
-  margin-left: 40%;
+  margin-left: -10%;
   min-width: 200px;
   min-height: 250px;
 }
@@ -112,10 +167,10 @@ img{
 }
 .child1{
   height: 100%;
-  img{
-    min-height: 40%;
-    // min-width: 30%;
-  }
+  // img{
+  //   // min-height: 40%;
+  //   // min-width: 30%;
+  // }
 }
 .description{
   background-color: rgb(41, 38, 43);
@@ -137,7 +192,7 @@ img{
   
 }
 .contact {
-  width: 450px;
+  // width: 450px;
   // font-size: 20px;
   p{
     font-size: 25px;
@@ -146,9 +201,11 @@ img{
   }
   ul{
     margin-left: 20%;
+    
     li{
       margin-bottom: 15%;
       font-size: 25px;
+      list-style-type: none;
       text-decoration: underline;
       color: white;
     }
