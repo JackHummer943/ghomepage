@@ -2,23 +2,16 @@ import logo from '../assets/pizza-logo.png';
 import kihot from '../assets/kihot.png';
 import pansa from '../assets/pansa.png';
 
-function Work() {
+function Illustrations() {
   return(  
 
-    <div className="work">
+    <div className="illustrations">
 
    
  
 <img   src={kihot} alt=""/>
 <img   src={pansa} alt=""/>
-      <li className="svelte-dmnv9n">
-
-  
-  <a  href="/dry_media" className="svelte-dmnv9n">
-    
-
-   </a> 
-  </li>
+      
     </div>
 
 
@@ -26,4 +19,4 @@ function Work() {
 );
 }
 
-export default Work;
+export default Illustrations;
