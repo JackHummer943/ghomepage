@@ -1,26 +1,45 @@
-import logo from '../assets/pizza-logo.png';
-import aboutPhoto from '../assets/About.jpg';
+// import aboutPhoto from '../assets/About.jpg';
+import GDacksa from '../assets/GDacksa.png';
+import '../../src/about.css';
 
 function About() {
-  return(
-  <div className="block_portrait">
-      <div className="child1">
-      <img src={aboutPhoto} className="portrait_img"/>
+  return (
+    <div class="wrapper">
+      <div>
+        {' '}
+        <ul className="home_block">
+          <li>
+            {/* <a onClick={() => handleClick}>work</a> */}
+            <a href="/work">work</a>
+
+            {/* <a
+            onClick={() => handleClick}
+            style={{ backgroundImage: `url(../src/assets/kihot.jpg)` }}>
+            work
+          </a> */}
+            {/* <a className={`sidebar ${activeState ? 'active' : ''}`}></a> */}
+          </li>
+          <li>
+            <a href="/about">about</a>
+          </li>
+          <li>
+            <a href="/contact">contact</a>
+          </li>
+        </ul>
       </div>
-      <div className="description">
-      <footer ><p>© 2011–2023 
-      G.Dacksa</p>
-</footer>
-        <p className="description">G.Dacksa is an acclaimed graphic artist and pedagogue. 
-        Known at home primarily by illustration work, with over 70 books spanning four decades, 
-        he is better recognised abroad for portraiture, 
-        nudes and landscapes featured in museums and private galleries.
-Merited Artist of Russia and Honorary member of Russian Academy of Fine Arts, 
-Klim graduated from St. Petersburg Ilya Repin Institute in 1976 and never left, 
-having since served his alma mater in every capacity from faculty assistant to the dean of Graphic arts,
- and, currently, a supervising professor of the book arts programme.</p>
-</div>
-  </div>
+
+      <div class="central">
+        <img src={GDacksa} />
+      </div>
+      <div class="copy">text textetxtttttttxxxxxxxxxxx</div>
+
+      <footer class="svelte-12ieuf3">
+        <p>
+          ©&nbsp;1994–2023
+          <span class="name svelte-12ieuf3">Klim&nbsp;Lee</span>
+        </p>
+      </footer>
+    </div>
   );
 }
 export default About;

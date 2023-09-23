@@ -1,0 +1,6 @@
+/* overflow: 'scroll' */
+
+html{
+  overflow: scroll !important;
+}
+

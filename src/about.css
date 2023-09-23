@@ -1,0 +1,31 @@
+
+
+/* .child1 {
+  margin-right:  500px;
+}
+img {
+  margin-right:  500px;
+} */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow:hidden !important;
+}
+img {
+ width: 300px !important;
+ height: 320px !important;
+ padding: 100px
+}
+.copy {
+  
+  color: white;
+  padding: 50px;
+}
+footer {
+  color: rgb(156, 23, 23);
+}
