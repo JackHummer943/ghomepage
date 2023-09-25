@@ -4,15 +4,7 @@ function Comix() {
     <div className="comix">
       <ul className="home_block">
         <li>
-          {/* <a onClick={() => handleClick}>work</a> */}
           <a href="/work">work</a>
-
-          {/* <a
-        onClick={() => handleClick}
-        style={{ backgroundImage: `url(../src/assets/kihot.jpg)` }}>
-        work
-      </a> */}
-          {/* <a className={`sidebar ${activeState ? 'active' : ''}`}></a> */}
         </li>
         <li>
           <a href="/about">about</a>
@@ -26,26 +18,10 @@ function Comix() {
         {' '}
         <ul>
           <li className="svelte-dmnv9n">
-            {/* href="/dry_media" */}
-            <a
-              href="/"
-              // onClick={() => onClickImage(0)}
-              // className={activeIndex === 0 ? 'svelte-dmnv9n' : 'black'}>
-            >
-              Illustrations
-            </a>
+            <a href="/">Illustrations</a>
           </li>
-
           <li className="svelte-dmnv9n">
-            {/* <a href="/about" className="svelte-dmnv9n"> */}
-            {/* <a href="/about" onClick={() => setImage()} className="svelte-dmnv9n"> */}
-            <a
-              href="/comix"
-              className="select"
-              // onClick={() => onClickImage(1)}
-              // className={activeIndex === 1 ? 'black' : 'svelte-dmnv9n'}
-              // className={activeIndex === 1 ? 'black' : 'svelte-dmnv9n'}>
-            >
+            <a href="/comix" className="select">
               Comics
             </a>
           </li>
@@ -68,4 +44,6 @@ function Comix() {
     </div>
   );
 }
+
+window.scrollTo({ top: 30 });
 export default Comix;
