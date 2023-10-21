@@ -1,45 +1,57 @@
-// import aboutPhoto from '../assets/About.jpg';
-import GDacksa from '../assets/GDacksa.png';
+// import GDacksa from '../assets/GDacksa.png';
 import '../../src/about.css';
+import EmblemWhite from '../assets/EmblemWhite.png';
+import { Link } from 'react-router-dom';
 
 function About() {
   return (
     <div class="wrapper">
-      <div>
-        {' '}
-        <ul className="home_block">
-          <li>
-            {/* <a onClick={() => handleClick}>work</a> */}
-            <a href="/work">work</a>
-
-            {/* <a
-            onClick={() => handleClick}
-            style={{ backgroundImage: `url(../src/assets/kihot.jpg)` }}>
-            work
-          </a> */}
-            {/* <a className={`sidebar ${activeState ? 'active' : ''}`}></a> */}
-          </li>
-          <li>
-            <a href="/about">about</a>
-          </li>
-          <li>
-            <a href="/contact">contact</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="central">
-        <img src={GDacksa} />
-      </div>
-      <div class="copy">text textetxtttttttxxxxxxxxxxx</div>
-
-      <footer class="svelte-12ieuf3">
-        <p>
-          ©&nbsp;1994–2023
-          <span class="name svelte-12ieuf3">Klim&nbsp;Lee</span>
+      <Link to="/">
+        <div className="emblem">
+          <img href="/" className="emblem_white" src={EmblemWhite} />
+        </div>
+      </Link>
+      <ul className="about_block">
+        <li className="about_list">
+          <a href="/work">work</a>
+        </li>
+        <li className="about_list">
+          <a href="/about">about</a>
+        </li>
+        <li className="about_list">
+          <a href="/contact">contact</a>
+        </li>
+      </ul>
+      <div class="text_desc">
+        <p className="about_description">Родился в 1995г в Екатеринбурге</p>
+        <p className="about_description">
+          {' '}
+          Основной темой в творчестве является книжная <br />
+          иллюстрация к западной и отечественной <br />
+          литературе.
         </p>
+        <p className="about_description">
+          {' '}
+          Философия творчества - стараться показать не <br />
+          объекты, а смыслы, что находятся между ними.
+        </p>
+        <p className="about_description">
+          {' '}
+          Главная задача - изобразить материал, как никто <br />
+          раньше, найти оригинальную трактовку.
+        </p>
+        <p className="about_description">
+          {' '}
+          Сейчас наибольший интерес представляют печатные <br />
+          техники: линогравюра, офорт, шелкография, их <br />
+          сочетания и возможности.
+        </p>
+      </div>
+      <footer className="scroll">
+        <p> (c) 2023 G.Dacksa</p>
       </footer>
     </div>
   );
 }
+window.scrollTo({ top: 50 });
 export default About;

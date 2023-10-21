@@ -3,16 +3,16 @@ html, body {
   padding: 0;
   overflow:hidden;
 }
-.home {
+.illustrations {
   position: relative;
-  background-image: url(../src/assets/mainTitle.jpg);
+  background-image: url(../src/assets/Illustrations.png);
 background-size: contain !important;
 background-repeat: no-repeat;
 aspect-ratio: 1930/1008 ;
 }
-.homesec {
+.illustrationsec {
   position: relative;
-  background-image: url(../src/assets/comix.jpg);
+  background-image: url(../src/assets/Illustrations.png);
 background-size: contain !important;
 background-repeat: no-repeat;
 aspect-ratio: 1930/1008 ;
@@ -52,7 +52,10 @@ nav{
 li{
     margin-top: 4px;
 }
-.home_block {
+a {
+  color: white;
+}
+.illustrations_block {
   position: absolute;
   top: 37%;
   left: 7.5%;
@@ -68,12 +71,13 @@ li{
 p { 
   font-family: 'Inter', sans-serif;
   font-family: 'Montserrat', sans-serif;
-  color: #484848;
+  color: white;
   font-size: 13px;
  }
- a:checked + .home {
-  background-image: url(../src/assets/comix.jpg);
+ a:checked + .illustrations {
+  background-image: url(../src/assets/Illustrations.png);
 }
+
 @media (max-width: 1600px) {
 nav{
   position: absolute;
@@ -88,12 +92,12 @@ nav{
 li{
   margin-top: 4px;
 }
-.home {
+.illustrations {
  background-size: contain !important;
  background-repeat: no-repeat;
  aspect-ratio: 1930/1008 ;
 }
-.home_block {
+.illustrations_block {
   position:absolute;
   left: 97px;
   top: 285px;
@@ -110,7 +114,7 @@ li{
 p {
   font-family: 'Inter', sans-serif;
   font-family: 'Montserrat', sans-serif;
-  color: #484848;
+  color: white;
   font-size: 13px;
  }
 }
@@ -127,13 +131,13 @@ p {
   li{
     margin-top: 4px;
   }
-  .home {
+  .illustrations {
    background-size: contain !important;
    background-repeat: no-repeat;
    aspect-ratio: 1930/1008 ;
   }
   
-  .home_block {
+  .illustrations_block {
     position:absolute;
     left: 97px;
     top: 285px;
@@ -151,7 +155,7 @@ p {
   p { 
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    color: #484848 !important;
+    color: white;
     font-size: 13px;
    }
 }
@@ -170,13 +174,13 @@ p {
   li{
     margin-top: 4px;
   }
-  .home {
-     background-image: url(../src/assets/mainTitle.jpg);
+  .illustrations {
+    background-image: url(../src/assets/Illustrations.png);
    background-size: contain !important;
    background-repeat: no-repeat;
    aspect-ratio: 1930/1008 ;
   }
-  .home_block {
+  .illustrations_block {
     position:absolute;
     left: 67px;
     top: 225px;
@@ -193,7 +197,7 @@ p {
   p { 
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    color: #484848;
+    color: white !important;
     font-size: 13px;
    }
 }
@@ -211,13 +215,13 @@ p {
   li{
     margin-top: 4px;
   }
-  .home {
-     background-image: url(../src/assets/mainTitle.jpg);
+  .illustrations {
+    background-image: url(../src/assets/Illustrations.png);
    background-size: contain !important;
    background-repeat: no-repeat;
    aspect-ratio: 1930/1008 ;
   }
-  .home_block {
+  .illustrations_block {
     position:absolute;
     left: 47px;
     top: 180px;
@@ -235,7 +239,7 @@ p {
   p { 
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    color: #484848;
+    color: white;
     font-size: 13px;
    }
 }
@@ -253,13 +257,13 @@ p {
   li{
     margin-top: 4px;
   }
-  .home {
-     background-image: url(../src/assets/mainTitle.jpg);
+  .illustrations {
+    background-image: url(../src/assets/Illustrations.png);
    background-size: contain !important;
    background-repeat: no-repeat;
    aspect-ratio: 1930/1008 ;
   }
-  .home_block {
+  .illustrations_block {
     position:absolute;
     left: 30px;
     top: 145px;
@@ -277,7 +281,7 @@ p {
   p { 
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    color: #484848;
+    color: white;
     font-size: 13px;
    }
 }
@@ -296,13 +300,13 @@ p {
   li{
     margin-top: 4px;
   }
-  .home {
-     background-image: url(../src/assets/mainTitle.jpg);
+  .illustrations {
+    background-image: url(../src/assets/Illustrations.png);
    background-size: contain !important;
    background-repeat: no-repeat;
    aspect-ratio: 1930/1008 ;
   }
-  .home_block {
+  .illustrations_block {
     position:absolute;
     left: 30px;
     top: 145px;
@@ -310,7 +314,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
   }
-  .home_block {
+  .illustrations_block {
     position:absolute;
     left: 22px;
     top: 130px;
@@ -327,7 +331,7 @@ p {
   p { 
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    color: #484848;
+    color: white;
     font-size: 13px;
    }
 }
@@ -344,13 +348,13 @@ p {
   li{
     margin-top: 2px;
   }
-  .home {
-     background-image: url(../src/assets/mainTitle.jpg);
+  .illustrations {
+    background-image: url(../src/assets/Illustrations.png);
    background-size: contain !important;
    background-repeat: no-repeat;
    aspect-ratio: 1930/1008 ;
   }
-  .home_block {
+  .illustrations_block {
     position:absolute;
     left: 14px;
     top: 110px;
@@ -367,7 +371,7 @@ p {
   p { 
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    color: #484848;
+    color: white;
     font-size: 13px;
    }
 }
@@ -384,13 +388,13 @@ p {
   li{
     margin-top: 1px;
   }
-  .home {
-  background-image: url(../src/assets/mainTitle.jpg);
+  .illustrations {
+    background-image: url(../src/assets/Illustrations.png);
    background-size: contain !important;
    background-repeat: no-repeat;
    aspect-ratio: 1930/1008 ;
   }
-  .home_block {
+  .illustrations_block {
     position:absolute;
     left: 5px;
     top: 90px;
@@ -407,7 +411,7 @@ p {
   p { 
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    color: #484848;
+    color: white;
     font-size: 10px;
    }
 }
@@ -423,13 +427,13 @@ p {
     font-family: 'Montserrat', sans-serif;
   }
 
-  .home {
-     background-image: url(../src/assets/mainTitle.jpg);
+  .illustrations {
+    background-image: url(../src/assets/Illustrations.png);
    background-size: contain !important;
    background-repeat: no-repeat;
    aspect-ratio: 1930/1008 ;
   }
-  .home_block {
+  .illustrations_block {
     position:absolute;
     left: -6px;
     top: 73px;
@@ -449,7 +453,7 @@ p {
   p { 
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    color: #484848;
+    color: white;
     font-size: 8px;
    }
 }
@@ -463,13 +467,13 @@ p {
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
   }
-  .home {
-     background-image: url(../src/assets/mainTitle.jpg);
+  .illustrations {
+    background-image: url(../src/assets/Illustrations.png);
    background-size: contain !important;
    background-repeat: no-repeat;
    aspect-ratio: 1930/1008 ;
   }
-  .home_block {
+  .illustrations_block {
     position:absolute;
     left: -10px;
     top: 63px;
@@ -489,7 +493,7 @@ p {
   p { 
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    color: #484848;
+    color: white;
     font-size: 8px;
    }
 }
@@ -503,13 +507,13 @@ p {
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
   }
-  .home {
-     background-image: url(../src/assets/mainTitle.jpg);
+  .illustrations {
+    background-image: url(../src/assets/Illustrations.png);
    background-size: contain !important;
    background-repeat: no-repeat;
    aspect-ratio: 1930/1008 ;
   }
-  .home_block {
+  .illustrations_block {
     position:absolute;
     left: -19.5px;
     top: 45px;
@@ -529,10 +533,14 @@ p {
   p { 
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    color: #484848;
+    color: white;
     font-size: 8px;
+    
    }
 }
+
+
+
 
 
 

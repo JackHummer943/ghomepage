@@ -4,13 +4,19 @@ function Comix() {
     <div className="comix">
       <ul className="home_block">
         <li>
-          <a href="/work">work</a>
+          <a href="/work" className="white_comix">
+            work
+          </a>
         </li>
         <li>
-          <a href="/about">about</a>
+          <a href="/about" className="white_comix">
+            about
+          </a>
         </li>
         <li>
-          <a href="/contact">contact</a>
+          <a href="/contact" className="white_comix">
+            contact
+          </a>
         </li>
       </ul>
 
@@ -18,7 +24,9 @@ function Comix() {
         {' '}
         <ul>
           <li className="svelte-dmnv9n">
-            <a href="/">Illustrations</a>
+            <a href="/illustrations" className="white_comix">
+              Illustrations{' '}
+            </a>
           </li>
           <li className="svelte-dmnv9n">
             <a href="/comix" className="select">
@@ -26,12 +34,12 @@ function Comix() {
             </a>
           </li>
           <li className="svelte-dmnv9n">
-            <a href="/" className="svelte-dmnv9n">
+            <a href="/" className="white_comix">
               Printings
             </a>
           </li>
           <li className="svelte-dmnv9n">
-            <a href="/contact" className="svelte-dmnv9n">
+            <a href="/Motions" className="white_comix">
               Motion
             </a>
           </li>

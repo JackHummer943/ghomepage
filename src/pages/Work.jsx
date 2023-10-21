@@ -1,3 +1,4 @@
+import emblem from '../assets/Emblem.png';
 import kihot from '../assets/kihot.png';
 import pansa from '../assets/pansa.png';
 import pictureOne from '../assets/pictureOne.png';
@@ -13,163 +14,208 @@ import pictureEleven from '../assets/pictureEleven.png';
 import pictureTwelve from '../assets/pictureTwelve.png';
 import pictureThirdTe from '../assets/pictureThirdTe.png';
 import '../../src/work.css';
+import { Link } from 'react-router-dom';
+import React from 'react';
+import ImageElem from '../components/ImageElem';
 
 function Work() {
-  return (
-    <div className="work" style={{ overflow: 'scroll' }}>
-      {/* <div className="container">
-        <div className="row">
-          <div style={{ width: '400px' }}>
-            {' '}
-            <img src={kihot} alt="" />
-          </div>
-          <div style={{ width: '400px' }}>
-            <img src={pansa} alt="" />
-          </div>
-          <div style={{ width: '400px' }}>
-            <img src={pansa} alt="" />
-          </div>
-          <div style={{ width: '400px' }}>
-            <img src={pansa} alt="" />
-          </div>
-          <div style={{ width: '400px' }}>
-            <img src={pansa} alt="" />
-          </div>
-        </div>
-      </div> */}
+  // const [apps, setApps] = useState();
+  const [isLoading, setIsLoading] = React.useState(true);
+  // const [items, setItems] = React.useState([]);
 
-      <article class="svelte-wti579">
-        <section class="svelte-wti579" style={{ width: '300px' }}>
+  const [images, setImages] = React.useState([]);
+
+  React.useEffect(() => {
+    // get запрос через функцию fetch на получение ответа по ссылке
+    fetch('https://634fc8a3df22c2af7b59dc7a.mockapi.io/items')
+      // когда отпарвился запрос, верни ответ
+      // и дай нам из этого ответа только json
+      .then((res) => {
+        //      console.log('ОТВЕТ', res.json);
+
+        // верни при отклике json файл
+        return res.json(); // переконвертируй его в json
+      })
+      // тогда при получении массива
+      .then((arr) => {
+        setImages(arr);
+        setIsLoading(false); // задел для Skeleton если он вообще будет нужен
+      });
+  }, []);
+
+  return (
+    <div className="work">
+      <div className="left_block">
+        <Link to="/">
+          <div className="emblem">
+            <img
+              src={emblem}
+              alt=""
+              decoding="async"
+              style={{
+                width: '40px',
+                marginLeft: '135px',
+                marginTop: '200px',
+                marginBottom: '10px',
+              }}
+            />{' '}
+          </div>
+        </Link>
+        <ul className="list">
+          <li className="text">
+            <a href="/work">work</a>
+          </li>
+          <li className="text">
+            <a href="/about">about</a>
+          </li>
+          <li className="text">
+            <a href="/contact">contact</a>
+          </li>
+        </ul>
+      </div>
+      <article className="svelte-wti579">
+        {images.map((obj) => (
+          <ImageElem key={obj.id} {...obj} img={obj.imageUrl} />
+        ))}
+        <section className="svelte-wti579">
+          {/* { isLoading
+          ? [ new Array(6)].map((_,index)) => <Skeleton.key = {index} />
+          : items.map((obj) => <ImageElem key={obj.id} {...obj}/>)} */}
+          {/* items.map((obj) => (
+            <ImageElem key={obj.id} {...obj} />
+          ))} */}
+        </section>
+
+        <section className="svelte-wti579">
           <img
             src={kihot}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section class="svelte-wti579">
+        <section className="svelte-wti579">
           <img
             src={pansa}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section class="svelte-wti579">
+        {/* <section className="svelte-wti579">
           <img
             src={pictureOne}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
-        </section>
-        <section class="svelte-wti579">
+        </section> */}
+        <section className="svelte-wti579">
           <img
             src={pictureTwo}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section class="svelte-wti579">
+        <section className="svelte-wti579">
           <img
             src={pictureThree}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section class="svelte-wti579">
+        <section className="svelte-wti579">
           <img
             src={pictureFour}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section class="svelte-wti579">
+        <section className="svelte-wti579">
           <img
             src={pictureFive}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section class="svelte-wti579">
+        {/* <section className="svelte-wti579">
           <img
             src={pictureSix}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
-        </section>
-        <section class="svelte-wti579">
+        </section> */}
+        <section className="svelte-wti579">
           <img
             src={pictureSeven}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section class="svelte-wti579">
+        {/* <section className="svelte-wti579">
           <img
             src={pictureEigth}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
-        </section>
-        <section class="svelte-wti579">
+        </section> */}
+        <section className="svelte-wti579">
           <img
             src={pictureTen}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section class="svelte-wti579">
+        <section className="svelte-wti579">
           <img
             src={pictureEleven}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section class="svelte-wti579">
+        <section className="svelte-wti579">
           <img
             src={pictureTwelve}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section class="svelte-wti579">
+        <section className="svelte-wti579">
           <img
             src={pictureThirdTe}
             alt=""
             decoding="async"
-            class="svelte-efm2wi"
-            style={{ width: '1000px', marginLeft: '300px' }}
+            className="svelte-efm2wi"
+            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
       </article>
-
-      <li className="svelte-dmnv9n">
-        <a href="/dry_media" className="svelte-dmnv9n"></a>
-      </li>
+      <footer className="scroll">
+        <p> (c) 2023 G.Dacksa</p>
+      </footer>
     </div>
   );
 }

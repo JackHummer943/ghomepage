@@ -19,7 +19,7 @@ function Home() {
         {' '}
         <ul>
           <li className="svelte-dmnv9n">
-            <a href="/Illustrations" className="svelte-dmnv9n">
+            <a href="/illustrations" className="svelte-dmnv9n">
               Illustrations
             </a>
           </li>
@@ -35,7 +35,7 @@ function Home() {
             </a>
           </li>
           <li className="svelte-dmnv9n">
-            <a href="/contact" className="svelte-dmnv9n">
+            <a href="/Motions" className="svelte-dmnv9n">
               Motion
             </a>
           </li>
