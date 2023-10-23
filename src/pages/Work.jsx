@@ -19,24 +19,17 @@ import React from 'react';
 import ImageElem from '../components/ImageElem';
 
 function Work() {
-  // const [apps, setApps] = useState();
   const [isLoading, setIsLoading] = React.useState(true);
-  // const [items, setItems] = React.useState([]);
-
   const [images, setImages] = React.useState([]);
 
   React.useEffect(() => {
-    // get запрос через функцию fetch на получение ответа по ссылке
     fetch('https://634fc8a3df22c2af7b59dc7a.mockapi.io/items')
-      // когда отпарвился запрос, верни ответ
-      // и дай нам из этого ответа только json
       .then((res) => {
         //      console.log('ОТВЕТ', res.json);
 
-        // верни при отклике json файл
-        return res.json(); // переконвертируй его в json
+        return res.json();
       })
-      // тогда при получении массива
+
       .then((arr) => {
         setImages(arr);
         setIsLoading(false); // задел для Skeleton если он вообще будет нужен
@@ -78,15 +71,6 @@ function Work() {
           <ImageElem key={obj.id} {...obj} img={obj.imageUrl} />
         ))}
         <section className="svelte-wti579">
-          {/* { isLoading
-          ? [ new Array(6)].map((_,index)) => <Skeleton.key = {index} />
-          : items.map((obj) => <ImageElem key={obj.id} {...obj}/>)} */}
-          {/* items.map((obj) => (
-            <ImageElem key={obj.id} {...obj} />
-          ))} */}
-        </section>
-
-        <section className="svelte-wti579">
           <img
             src={kihot}
             alt=""
@@ -104,15 +88,7 @@ function Work() {
             style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
-        {/* <section className="svelte-wti579">
-          <img
-            src={pictureOne}
-            alt=""
-            decoding="async"
-            className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
-          />{' '}
-        </section> */}
+
         <section className="svelte-wti579">
           <img
             src={pictureTwo}
@@ -149,15 +125,7 @@ function Work() {
             style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
-        {/* <section className="svelte-wti579">
-          <img
-            src={pictureSix}
-            alt=""
-            decoding="async"
-            className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
-          />{' '}
-        </section> */}
+
         <section className="svelte-wti579">
           <img
             src={pictureSeven}
@@ -167,15 +135,7 @@ function Work() {
             style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
           />{' '}
         </section>
-        {/* <section className="svelte-wti579">
-          <img
-            src={pictureEigth}
-            alt=""
-            decoding="async"
-            className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
-          />{' '}
-        </section> */}
+
         <section className="svelte-wti579">
           <img
             src={pictureTen}
