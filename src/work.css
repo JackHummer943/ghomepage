@@ -1,0 +1,41 @@
+html, body {
+  overflow: scroll;
+}
+.image_block_wrapper {
+  left: 500px;
+  position: relative;
+  margin: 20px;
+}
+.work {
+  background-color:  #101010;
+}
+.left_block {
+  /* background-color: white; */
+  position: fixed;
+  /* left: 200px;
+  top: 300px; */
+  display: inline-block;
+  width: 400px;
+  height: 750px;
+
+}
+ .list {
+ padding-left: 135px;
+}
+.text {
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.scroll {
+  position: fixed;
+  top: 700px;
+  background-size: contain !important;
+  left: 130px;
+}
+p {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #484848;
+  font-size: 8px;
+}

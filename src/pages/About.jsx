@@ -1,26 +1,57 @@
-import logo from '../assets/pizza-logo.png';
-import aboutPhoto from '../assets/About.jpg';
+// import GDacksa from '../assets/GDacksa.png';
+import '../../src/about.css';
+import EmblemWhite from '../assets/EmblemWhite.png';
+import { Link } from 'react-router-dom';
 
 function About() {
-  return(
-  <div className="block_portrait">
-      <div className="child1">
-      <img src={aboutPhoto} className="portrait_img"/>
+  return (
+    <div class="wrapper">
+      <Link to="/">
+        <div className="emblem">
+          <img href="/" className="emblem_white" src={EmblemWhite} />
+        </div>
+      </Link>
+      <ul className="about_block">
+        <li className="about_list">
+          <a href="/work">work</a>
+        </li>
+        <li className="about_list">
+          <a href="/about">about</a>
+        </li>
+        <li className="about_list">
+          <a href="/contact">contact</a>
+        </li>
+      </ul>
+      <div class="text_desc">
+        <p className="about_description">Родился в 1995г в Екатеринбурге</p>
+        <p className="about_description">
+          {' '}
+          Основной темой в творчестве является книжная <br />
+          иллюстрация к западной и отечественной <br />
+          литературе.
+        </p>
+        <p className="about_description">
+          {' '}
+          Философия творчества - стараться показать не <br />
+          объекты, а смыслы, что находятся между ними.
+        </p>
+        <p className="about_description">
+          {' '}
+          Главная задача - изобразить материал, как никто <br />
+          раньше, найти оригинальную трактовку.
+        </p>
+        <p className="about_description">
+          {' '}
+          Сейчас наибольший интерес представляют печатные <br />
+          техники: линогравюра, офорт, шелкография, их <br />
+          сочетания и возможности.
+        </p>
       </div>
-      <div className="description">
-      <footer ><p>© 2011–2023 
-      G.Dacksa</p>
-</footer>
-        <p className="description">G.Dacksa is an acclaimed graphic artist and pedagogue. 
-        Known at home primarily by illustration work, with over 70 books spanning four decades, 
-        he is better recognised abroad for portraiture, 
-        nudes and landscapes featured in museums and private galleries.
-Merited Artist of Russia and Honorary member of Russian Academy of Fine Arts, 
-Klim graduated from St. Petersburg Ilya Repin Institute in 1976 and never left, 
-having since served his alma mater in every capacity from faculty assistant to the dean of Graphic arts,
- and, currently, a supervising professor of the book arts programme.</p>
-</div>
-  </div>
+      <footer className="scroll">
+        <p> (c) 2023 G.Dacksa</p>
+      </footer>
+    </div>
   );
 }
+window.scrollTo({ top: 50 });
 export default About;
