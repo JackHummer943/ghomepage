@@ -1,5 +1,5 @@
-html{
-  overflow: scroll !important;
+html, body {
+  overflow: scroll;
 }
 .image_block_wrapper {
   left: 500px;

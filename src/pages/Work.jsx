@@ -19,20 +19,15 @@ import React from 'react';
 import ImageElem from '../components/ImageElem';
 
 function Work() {
-  const [isLoading, setIsLoading] = React.useState(true);
   const [images, setImages] = React.useState([]);
 
   React.useEffect(() => {
     fetch('https://634fc8a3df22c2af7b59dc7a.mockapi.io/items')
       .then((res) => {
-        //      console.log('ОТВЕТ', res.json);
-
         return res.json();
       })
-
       .then((arr) => {
         setImages(arr);
-        setIsLoading(false); // задел для Skeleton если он вообще будет нужен
       });
   }, []);
 
@@ -66,110 +61,112 @@ function Work() {
           </li>
         </ul>
       </div>
-      <article className="svelte-wti579">
+      <article className="image_block">
         {images.map((obj) => (
+          // создан отдельный компонент для изображений, чтобы вынести все стили
+          // вопрос, брать изображения из БД или оставить изображения внутри проекта?
           <ImageElem key={obj.id} {...obj} img={obj.imageUrl} />
         ))}
-        <section className="svelte-wti579">
+        <section className="image_block_wrapper">
           <img
             src={kihot}
             alt=""
             decoding="async"
             className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
+            style={{ width: '700px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section className="svelte-wti579">
+        <section className="image_block_wrapper">
           <img
             src={pansa}
             alt=""
             decoding="async"
             className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
+            style={{ width: '700px', marginBottom: '100px' }}
           />{' '}
         </section>
 
-        <section className="svelte-wti579">
+        <section className="image_block_wrapper">
           <img
             src={pictureTwo}
             alt=""
             decoding="async"
             className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
+            style={{ width: '700px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section className="svelte-wti579">
+        <section className="image_block_wrapper">
           <img
             src={pictureThree}
             alt=""
             decoding="async"
             className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
+            style={{ width: '700px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section className="svelte-wti579">
+        <section className="image_block_wrapper">
           <img
             src={pictureFour}
             alt=""
             decoding="async"
             className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
+            style={{ width: '700px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section className="svelte-wti579">
+        <section className="image_block_wrapper">
           <img
             src={pictureFive}
             alt=""
             decoding="async"
             className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
+            style={{ width: '700px', marginBottom: '100px' }}
           />{' '}
         </section>
 
-        <section className="svelte-wti579">
+        <section className="image_block_wrapper">
           <img
             src={pictureSeven}
             alt=""
             decoding="async"
             className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
+            style={{ width: '700px', marginBottom: '100px' }}
           />{' '}
         </section>
 
-        <section className="svelte-wti579">
+        <section className="image_block_wrapper">
           <img
             src={pictureTen}
             alt=""
             decoding="async"
             className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
+            style={{ width: '700px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section className="svelte-wti579">
+        <section className="image_block_wrapper">
           <img
             src={pictureEleven}
             alt=""
             decoding="async"
             className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
+            style={{ width: '700px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section className="svelte-wti579">
+        <section className="image_block_wrapper">
           <img
             src={pictureTwelve}
             alt=""
             decoding="async"
             className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
+            style={{ width: '700px', marginBottom: '100px' }}
           />{' '}
         </section>
-        <section className="svelte-wti579">
+        <section className="image_block_wrapper">
           <img
             src={pictureThirdTe}
             alt=""
             decoding="async"
             className="svelte-efm2wi"
-            style={{ width: '700px', marginLeft: '400px', marginBottom: '100px' }}
+            style={{ width: '700px', marginBottom: '100px' }}
           />{' '}
         </section>
       </article>
