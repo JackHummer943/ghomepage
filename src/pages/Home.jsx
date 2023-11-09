@@ -5,7 +5,7 @@ function Home() {
     <div className="home">
       <ul className="home_block">
         <li>
-          <a href="/work">work</a>
+          <a href="/Work">work</a>
         </li>
         <li>
           <a href="/about">about</a>

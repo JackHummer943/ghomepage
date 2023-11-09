@@ -21,15 +21,15 @@ import ImageElem from '../components/ImageElem';
 function Work() {
   const [images, setImages] = React.useState([]);
 
-  React.useEffect(() => {
-    fetch('https://634fc8a3df22c2af7b59dc7a.mockapi.io/items')
-      .then((res) => {
-        return res.json();
-      })
-      .then((arr) => {
-        setImages(arr);
-      });
-  }, []);
+  // React.useEffect(() => {
+  //   fetch('https://634fc8a3df22c2af7b59dc7a.mockapi.io/items')
+  //     .then((res) => {
+  //       return res.json();
+  //     })
+  //     .then((arr) => {
+  //       setImages(arr);
+  //     });
+  // }, []);
 
   return (
     <div className="work">
