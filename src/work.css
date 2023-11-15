@@ -1,10 +1,16 @@
 html, body {
   overflow: scroll;
 }
+.image_block__image {
+  width: 70%;
+  height: 30%;
+}
 .image_block_wrapper {
-  left: 500px;
+  /* left: 500px; */
   position: relative;
-  margin: 20px;
+  /* margin: 20px; */
+  margin-left: 400px;
+
 }
 .work {
   background-color:  #101010;
