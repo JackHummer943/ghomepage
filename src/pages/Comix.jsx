@@ -9,9 +9,9 @@ function Comix() {
           </a>
         </li>
         <li>
-          <a href="/about" className="white_comix">
+          {/* <a href="/about" className="white_comix">
             about
-          </a>
+          </a> */}
         </li>
         <li>
           <a href="/contact" className="white_comix">

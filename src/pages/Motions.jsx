@@ -10,9 +10,9 @@ function Motions() {
             </a>
           </li>
           <li>
-            <a className="motion_link" href="/about">
+            {/* <a className="motion_link" href="/about">
               about
-            </a>
+            </a> */}
           </li>
           <li>
             <a className="motion_link" href="/contact">
