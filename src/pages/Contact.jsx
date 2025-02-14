@@ -17,9 +17,7 @@ function Contact() {
           <li className="text">
             <a href="/work">work</a>
           </li>
-          <li className="text">
-            <a href="/about">about</a>
-          </li>
+          <li className="text">{/* <a href="/about">about</a> */}</li>
           <li className="text">
             <a href="/contact">contact</a>
           </li>

@@ -9,9 +9,9 @@ function Illustrations() {
           </a>
         </li>
         <li>
-          <a className="illustration_link" href="/about">
+          {/* <a className="illustration_link" href="/about">
             about
-          </a>
+          </a> */}
         </li>
         <li>
           <a className="illustration_link" href="/contact">

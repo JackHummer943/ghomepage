@@ -15,9 +15,7 @@ function About() {
         <li className="about_list">
           <a href="/work">work</a>
         </li>
-        <li className="about_list">
-          <a href="/about">about</a>
-        </li>
+        <li className="about_list">{/* <a href="/about">about</a> */}</li>
         <li className="about_list">
           <a href="/contact">contact</a>
         </li>

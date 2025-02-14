@@ -1,6 +1,3 @@
-html, body {
-  overflow: scroll;
-}
 .image_block__image {
   width: 70%;
   height: 30%;
@@ -10,10 +7,9 @@ html, body {
   position: relative;
   /* margin: 20px; */
   margin-left: 400px;
-
 }
 .work {
-  background-color:  #101010;
+  background-color: #101010;
 }
 .left_block {
   /* background-color: white; */
@@ -23,15 +19,14 @@ html, body {
   display: inline-block;
   width: 400px;
   height: 750px;
-
 }
- .list {
- padding-left: 135px;
+.list {
+  padding-left: 135px;
 }
 .text {
   font-size: 18px;
   font-family: 'Inter', sans-serif;
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .scroll {
   position: fixed;
