@@ -32,7 +32,7 @@ function Work() {
   // }, []);
 
   return (
-    <div className="work">
+    <div className="work" style={{ width: 'fit-content' }}>
       <div className="left_block">
         <Link to="/">
           <div className="emblem">

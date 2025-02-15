@@ -6,7 +6,7 @@
   /* left: 500px; */
   position: relative;
   /* margin: 20px; */
-  margin-left: 400px;
+  padding-left: 400px;
 }
 .work {
   background-color: #101010;
@@ -31,8 +31,7 @@
 .scroll {
   position: fixed;
   top: 700px;
-  background-size: contain !important;
-  left: 130px;
+  padding-left: 130px;
 }
 p {
   font-family: 'Inter', sans-serif;
