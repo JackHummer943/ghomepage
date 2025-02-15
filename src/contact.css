@@ -1,12 +1,10 @@
 .contact {
   background-color: #000;
+  width: max-content;
 }
-
 .follow {
   position: relative;
-  /* padding-left: 950px; */
   padding-top: 250px;
-  font-size: 20;
 }
 .emblem_black {
   width: 40px;
@@ -20,7 +18,6 @@
 .h {
   color: #a5a5a5;
 }
-
 .footer_contact {
   position: relative;
   padding-bottom: 20px;
